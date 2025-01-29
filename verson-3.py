@@ -13,7 +13,7 @@ class NumerologyProApp(ctk.CTk):
         super().__init__()
         
         # Window configuration
-        self.title("🔮 Numerology Pro 2.0")
+        self.title("🔮 Numerology Pro 3.0")
         self.geometry("800x900")
         self.configure(fg_color="#FFF0F5")
         
