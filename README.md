@@ -54,3 +54,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Feel free to tweak it and add any specific details about how the app works or other features you might want!
+
+🌈 Made with Python & Pastel Colors
+Created by @aryan6673 | ⭐ Star if you like it!
+
+
+
+
+- Python Version: `https://img.shields.io/badge/python-3.6%2B-blue`
+- License: `https://img.shields.io/badge/license-MIT-green`
+- Last Updated: `https://img.shields.io/badge/last%20updated-2025--01--29-brightgreen`
+
