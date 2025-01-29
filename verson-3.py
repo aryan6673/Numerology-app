@@ -73,6 +73,45 @@ class NumerologyProApp(ctk.CTk):
                 "33": "Master teacher, spiritual guide",
                 "0": "Invalid input - please check your name"
             },
+            'destiny': {
+                "1": "Leadership, independence, and innovation",
+                "2": "Cooperation, harmony, and diplomacy",
+                "3": "Creativity, self-expression, and joy",
+                "4": "Stability, hard work, and practicality",
+                "5": "Freedom, adventure, and versatility",
+                "6": "Responsibility, nurturing, and balance",
+                "7": "Introspection, spirituality, and wisdom",
+                "8": "Ambition, success, and material wealth",
+                "9": "Humanitarianism, compassion, and idealism",
+                "11": "Inspiration, intuition, and spiritual insight",
+                "22": "Mastery, large-scale projects, and practical vision",
+                "33": "Spiritual guidance, healing, and universal love"
+            },
+            'soul': {
+                "1": "Desire for independence and leadership",
+                "2": "Desire for harmony and partnership",
+                "3": "Desire for creativity and self-expression",
+                "4": "Desire for stability and security",
+                "5": "Desire for freedom and adventure",
+                "6": "Desire for love and nurturing",
+                "7": "Desire for knowledge and spiritual growth",
+                "8": "Desire for success and material abundance",
+                "9": "Desire to serve humanity and make a difference",
+                "11": "Desire for spiritual enlightenment and inspiration",
+                "22": "Desire to achieve large-scale goals and make a lasting impact",
+                "33": "Desire to heal and uplift humanity through love"
+            },
+            'personality': {
+                "1": "Confident first impression",
+                "2": "Warm and approachable demeanor",
+                "3": "Friendly and creative personality",
+                "4": "Serious and practical appearance",
+                "5": "Adventurous and energetic vibe",
+                "6": "Caring and responsible nature",
+                "7": "Mysterious and intellectual aura",
+                "8": "Powerful and authoritative presence",
+                "9": "Compassionate and idealistic image"
+            },
             'birthday': {
                 "1": "Natural leader with strong willpower",
                 "2": "Peacemaker with great sensitivity",
@@ -86,17 +125,6 @@ class NumerologyProApp(ctk.CTk):
                 "11": "Inspirational visionary with heightened intuition",
                 "22": "Master architect of large-scale projects",
                 "33": "Spiritual guide focused on universal love"
-            },
-            'personality': {
-                "1": "Confident first impression",
-                "2": "Warm and approachable demeanor",
-                "3": "Friendly and creative personality",
-                "4": "Serious and practical appearance",
-                "5": "Adventurous and energetic vibe",
-                "6": "Caring and responsible nature",
-                "7": "Mysterious and intellectual aura",
-                "8": "Powerful and authoritative presence",
-                "9": "Compassionate and idealistic image"
             }
         }
         
