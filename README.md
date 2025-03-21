@@ -1,134 +1,145 @@
 # 🔮 Numerology App Pro
 
-![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![Release Date](https://img.shields.io/badge/release%20date-2025--03--21-brightgreen?style=flat-square)
+![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
 ![Made with Love](https://img.shields.io/badge/made%20with-❤️-red?style=flat-square)
 
-> A sophisticated Python application for comprehensive numerological analysis, combining traditional wisdom with modern computational methods.
+> A sophisticated Python application for comprehensive numerological analysis, combining traditional wisdom with modern computational methods. Built with precision and care to reveal life's hidden patterns through numbers.
 
 ## 📑 Table of Contents
-- [Overview](#overview)
-- [Core Features](#-core-features)
-- [System Architecture](#-system-architecture)
-- [Technical Implementation](#-technical-implementation)
-- [Installation Guide](#-installation-guide)
-- [Usage Examples](#-usage-examples)
+- [Overview](#-overview)
+- [How It Works](#-how-it-works)
+- [Core Concepts](#-core-concepts)
+- [Computation Process](#-computation-process)
+- [Personality Analysis](#-personality-analysis)
+- [Types of Numbers](#-types-of-numbers)
+- [Installation](#-installation)
+- [Usage Guide](#-usage-guide)
+- [Technical Details](#-technical-details)
 - [Contributing](#-contributing)
 - [License](#-license)
-- [Acknowledgments](#-acknowledgments)
 
-## Overview
+## 🌟 Overview
 
-The Numerology App Pro is a state-of-the-art tool that provides in-depth numerological analysis through advanced computational methods. It processes birth dates and names to reveal intricate personality traits, life path guidance, and personal insights.
+Welcome to Numerology Pro - a state-of-the-art desktop application that bridges ancient numerological wisdom with modern technology. Our application provides deep insights into personality traits, life paths, and destiny numbers through advanced computational methods.
 
-## 🌟 Core Features
+## 🔄 How It Works
 
-### Calculation System Architecture
-![Calculation System](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/6.jpg)
-*Advanced calculation engine demonstrating the core numerological processing system*
+![Complete Flowchart of Numerology](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/7.jpg)
+*Comprehensive visualization of the numerology analysis process from user input to detailed insights*
 
-### Data Flow Process
-![Data Flow](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/7.jpg)
-*Systematic data flow showing the integration of various numerological components*
+The application follows a systematic approach:
+1. User Input Collection
+2. Data Validation
+3. Numerological Calculations
+4. Result Generation
+5. Detailed Analysis Presentation
 
-### Key Elements in Numerology Analysis
-![Key Elements](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/8.jpg)
+## 📊 Core Concepts
 
-#### Influence Weights in Analysis:
-- **Life Path Number** (30% Impact)
-  - Primary life direction indicator
-  - Core personality blueprint
-  
-- **Destiny Number** (25% Impact)
-  - Career and life goals alignment
-  - Purpose manifestation
-  
-- **Soul Urge Number** (20% Impact)
-  - Inner desires and motivations
-  - Spiritual inclinations
-  
-- **Personality Number** (15% Impact)
-  - External persona
-  - Social interaction patterns
-  
-- **Birthday Number** (10% Impact)
-  - Natural talents
-  - Inherent gifts
+![Key Elements in Numerology Reading](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/8.jpg)
+*Essential components that form the foundation of numerological analysis*
 
-### Personality Trait Analysis System
-![Trait Analysis](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/9.jpg)
+### Impact Weightage:
+| Number Type | Impact | Description |
+|------------|--------|-------------|
+| Life Path | 30% | Core life direction and purpose |
+| Destiny | 25% | Career and life goals |
+| Soul Urge | 20% | Inner desires and motivation |
+| Personality | 15% | External characteristics |
+| Birthday | 10% | Natural talents and gifts |
 
-#### Comprehensive Trait Evaluation:
-- Internal Social Traits
-- External Social Traits
-- Personal Characteristic Markers
-- Behavioral Pattern Analysis
+## ⚡ Computation Process
 
-### Processing Order and Methodology
-![Processing Order](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/10.jpg)
-*Systematic calculation sequence ensuring accurate numerological insights*
+![CALCULATES CALCULATES](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/6.jpg)
+*Advanced calculation engine performing precise numerological computations*
 
-## 💻 Technical Implementation
-
-### System Requirements
 ```python
-# Required Python version and dependencies
-python_version >= "3.6"
-dependencies = {
-    "numpy": "^1.21.0",
-    "pandas": "^1.3.0",
-    "tkinter": "^8.6"
-}
+def calculate_with_loading(self):
+    """Calculate with visual feedback."""
+    try:
+        for i in range(3):
+            self.loading_label.configure(text=f"Calculating{'.'*(i+1)} 🔮")
+            time.sleep(0.5)
+            
+        self.calculate()
+    finally:
+        self.loading_label.configure(text="")
+        self.calculate_btn.configure(state="normal")
 ```
 
-### Core Algorithm
-```python
-class NumerologyCalculator:
-    def calculate_life_path(self, birth_date: str) -> int:
-        """Calculate Life Path Number from birth date."""
-        date_nums = [int(d) for d in birth_date if d.isdigit()]
-        return self.reduce_number(sum(date_nums))
-    
-    def reduce_number(self, num: int) -> int:
-        """Reduce number to single digit or master number."""
-        if num in [11, 22, 33]:
-            return num
-        return num if num < 10 else self.reduce_number(sum(int(d) for d in str(num)))
-```
+## 🧬 Personality Analysis
 
-## 🚀 Installation Guide
+![SOCIAL TRAITS & PERSONAL TRAITS](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/9.jpg)
+*Detailed analysis of personality traits and social characteristics*
+
+### Analysis Components:
+- External Social Behaviors
+- Internal Personal Traits
+- Interaction Patterns
+- Core Character Indicators
+- Behavioral Tendencies
+
+## 🔢 Types of Numbers
+
+![All Numerology Numbers Calculated](https://raw.githubusercontent.com/aryan6673/Numerology-app/main/images/10.jpg)
+*Comprehensive overview of numerological calculations and their interpretations*
+
+## 📦 Installation
+
+### Prerequisites
+- Python 3.6+
+- CustomTkinter library
+- Basic understanding of GUI applications
 
 ```bash
-# Clone repository
+# Clone the repository
 git clone https://github.com/aryan6673/Numerology-app.git
 
-# Navigate to directory
+# Navigate to project directory
 cd Numerology-app
 
-# Install dependencies
-pip install -r requirements.txt
+# Install required package
+pip install customtkinter
 
-# Run application
-python main.py
+# Launch the application
+python verson-3.py
 ```
 
-## 📖 Usage Examples
+## 📖 Usage Guide
+
+1. **Launch the Application**
+   - Run the script to open the modern GUI interface
+
+2. **Enter Your Details**
+   - Full Name (alphabetic characters)
+   - Birth Date (DD/MM/YYYY format)
+
+3. **Generate Analysis**
+   - Click "Analyze My Numerology 🌈"
+   - Wait for the calculations to complete
+
+4. **Explore Results**
+   - Navigate through different aspect tabs
+   - Read detailed interpretations
+   - View calculation history
+
+## 💻 Technical Details
 
 ```python
-# Initialize calculator
-calculator = NumerologyCalculator()
-
-# Get complete numerological profile
-profile = calculator.get_complete_profile(
-    birth_date="1990-03-21",
-    full_name="John Doe Smith"
-)
-
-# Access specific numbers
-life_path = profile.life_path_number
-destiny = profile.destiny_number
+class NumerologyProApp(ctk.CTk):
+    """Main application class."""
+    def __init__(self):
+        super().__init__()
+        self.title("🔮 Numerology Pro 3.0")
+        self.geometry("800x900")
+        self.configure(fg_color="#FFF0F5")
+        
+        # Initialize components
+        self.load_resources()
+        self.create_widgets()
 ```
 
 ## 🤝 Contributing
@@ -137,28 +148,21 @@ We welcome contributions! Please follow these steps:
 
 1. Fork the repository
 2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## ✨ Acknowledgments
-
-- Traditional Numerology Principles
-- Modern Computational Methods
-- Open Source Community
-- [List of Contributors](CONTRIBUTORS.md)
+Distributed under the MIT License. See `LICENSE` for more information.
 
 ---
 
 <div align="center">
 
-**Last Updated:** 2025-03-21 17:32:55 UTC
-
 Created with ❤️ by [@aryan6673](https://github.com/aryan6673)
+
+**Last Updated:** 2025-03-21 17:55:12 UTC
 
 If this app helps you, please consider giving it a ⭐
 
