@@ -43,6 +43,6 @@ If you experience or witness misconduct, please report it by opening an issue or
 ---
 
 ## 📩 Contact  
-For any concerns, reach out to **[your-email@example.com](mailto:your-email@example.com)**.  
+For any concerns, reach out to **[Aryan](mailto:aryan@perlzy.live)**.  
 
 Thank you for contributing to a positive open-source environment! 🚀  
