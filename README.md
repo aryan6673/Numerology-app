@@ -1,9 +1,10 @@
 # 🔮 Numerology App Pro
 
-![GitHub last commit](https://img.shields.io/github/last-commit/aryan6673/Numerology-app?color=blue&style=flat-square)
+![Status](https://img.shields.io/badge/status-active-success?style=flat-square)
 ![Python Version](https://img.shields.io/badge/python-3.6%2B-blue?style=flat-square)
 ![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)
 ![Release Date](https://img.shields.io/badge/release%20date-2025--03--21-brightgreen?style=flat-square)
+![Made with Love](https://img.shields.io/badge/made%20with-❤️-red?style=flat-square)
 
 > A sophisticated Python application for comprehensive numerological analysis, combining traditional wisdom with modern computational methods.
 
