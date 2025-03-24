@@ -135,7 +135,7 @@ class NumerologyProApp(ctk.CTk):
         self.header.grid(row=0, column=0, pady=20)
         
         self.title_label = ctk.CTkLabel(self.header, 
-                                      text="Numerology Pro 2.0 🔮",
+                                      text="Numerology Pro 3.0 🔮",
                                       font=("Arial Rounded MT Bold", 28),
                                       text_color="#4B0082")
         self.title_label.grid(row=0, column=0, pady=10)
