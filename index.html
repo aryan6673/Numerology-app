@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✨ Mystical Numerology | by @aryan6673</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="mystical-bg">
+        <div class="floating-spirits"></div>
+        <div class="moon"></div>
+        <div class="clouds"></div>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="top-nav">
+        <div class="time-display" id="currentTime">
+            <span class="time-icon">🌙</span>
+            <span id="utcTime">Loading time...</span>
+        </div>
+        <div class="user-info">
+            <a href="https://github.com/aryan6673" class="github-link" target="_blank">
+                <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                <span>@aryan6673</span>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="mystical-container">
+        <div class="scroll-parchment">
+            <div class="parchment-header">
+                <h1>✧ Mystic Numbers ✧</h1>
+                <p class="subtitle">Unveil the secrets written in your stars</p>
+            </div>
+
+            <!-- Input Section -->
+            <div class="mystical-form">
+                <div class="input-group">
+                    <label for="fullName">
+                        <span class="label-icon">✧</span>
+                        Your Sacred Name
+                    </label>
+                    <input type="text" id="fullName" placeholder="As known in the mortal realm...">
+                </div>
+
+                <div class="input-group">
+                    <label for="birthDate">
+                        <span class="label-icon">✧</span>
+                        Your Star Date
+                    </label>
+                    <input type="date" id="birthDate">
+                </div>
+
+                <button id="calculateBtn" class="mystical-btn">
+                    <span class="btn-glow"></span>
+                    <span class="btn-text">Reveal Your Destiny</span>
+                </button>
+            </div>
+
+            <!-- Results Section -->
+            <div id="results" class="results-scroll hidden">
+                <div class="number-crystals">
+                    <div class="crystal-card">
+                        <div class="crystal">
+                            <span id="destinyNumber" class="number">-</span>
+                        </div>
+                        <h3>Destiny Crystal</h3>
+                    </div>
+                    <div class="crystal-card">
+                        <div class="crystal">
+                            <span id="lifePathNumber" class="number">-</span>
+                        </div>
+                        <h3>Life Path Crystal</h3>
+                    </div>
+                    <div class="crystal-card">
+                        <div class="crystal">
+                            <span id="soulNumber" class="number">-</span>
+                        </div>
+                        <h3>Soul Crystal</h3>
+                    </div>
+                </div>
+
+                <div class="prophecy-scroll">
+                    <h3>✧ Your Mystical Reading ✧</h3>
+                    <div id="numerologyMeaning" class="prophecy-text"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Elements -->
+    <div class="floating-elements">
+        <div class="spirit spirit1">✦</div>
+        <div class="spirit spirit2">✧</div>
+        <div class="spirit spirit3">✦</div>
+        <div class="spirit spirit4">✧</div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
